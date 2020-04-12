@@ -1,7 +1,10 @@
 -- guess.lua
 
+print("How high do you want to guess?")
+max = io.read("*number")
+
 math.randomseed(os.time())
-max = 20
+
 print("Guess a number between 1 and ", max)
 number = math.random(max)
 
