@@ -7,18 +7,14 @@ print("You guessed", guess)
 
 if guess == number then
   print("You guessed right!")
-else 
-  if guess < 1 then
-    print("You don't follow directions very well, do you?")
-  else
-    if guess > 20 then
-      print("Do you know how to play this game?")
-    else
-	if guess < number then
-	  print("You guessed too low!")
-	else
-	  print("You guessed too high!")
-	end
-    end
-  end	
+elseif guess < 1 then
+  print("You don't follow directions very well, do you?")
+elseif guess > 20 then
+  print("Do you know how to play this game?")
+elseif guess < number then
+  print("You guessed too low!")
+else
+  print("You guessed too high!")
 end
+	
+
