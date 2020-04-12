@@ -1,7 +1,9 @@
 -- guess.lua
 
-print("Guess a number between 1 and 20")
-number = 13
+math.randomseed(os.time())
+max = 20
+print("Guess a number between 1 and ", max)
+number = math.random(max)
 
 repeat
 	guess = io.read("*number") 
@@ -11,7 +13,7 @@ repeat
 	  print("You guessed right!")
 	elseif guess < 1 then
 	  print("You don't follow directions very well, do you?")
-	elseif guess > 20 then
+	elseif guess > max then
 	  print("Do you know how to play this game?")
 	elseif guess < number then
 	  print("You guessed too low!")
